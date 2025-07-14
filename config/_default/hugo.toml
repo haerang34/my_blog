@@ -3,4 +3,5 @@
 
 # title = 'My Awesome Blog'
 
+baseURL = 'https://haerang34.netlify.app/'
 defaultContentLanguage = "ko"
