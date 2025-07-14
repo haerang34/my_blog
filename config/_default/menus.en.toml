@@ -1,0 +1,16 @@
+[[main]]
+  name = "Blog"
+  pageRef = "/en/blog"
+  weight = 10
+
+[[main]]
+  identifier = "Search"
+  weight = 30
+  [main.params]
+    action = "search"
+    icon = "search"
+
+[[footer]]
+  name = "About"
+  pageRef = "/en/about"
+  weight = 10
