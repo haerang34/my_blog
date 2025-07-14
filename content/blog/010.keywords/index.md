@@ -8,6 +8,7 @@ draft: false
 # 개발
 ### Vibe Coding
 ### MCP(Model Context Protocol)
+### Netlify
 ---
 # AI
 ### Gemini CLI
