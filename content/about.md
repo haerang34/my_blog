@@ -1,5 +1,5 @@
 ---
-title: "정보"
+title: "해랑34 정보"
 date: 2025-07-11T09:47:23+09:00
 description: About Page
 ---
