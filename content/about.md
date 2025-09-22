@@ -17,7 +17,7 @@ description: About Page
 ##### - 유전체 AI 플랫폼 개발
 ##### - 유전체 데이터 엔지니어링
 ***
-### 개발 스택
+### 보유 기술
 #### 소프트웨어 개발자
 ##### - Python, C/C++, C#, Java, Javascript, ReactJs, Flask, FastAPI, .net Framework, Oracle, MariaDB, MongoDB, SQLite, Windows, Linux(Ubuntu, Centos), MacOS
 #### 데이터 엔지니어
