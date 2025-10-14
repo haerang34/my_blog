@@ -19,11 +19,11 @@ description: About Page
 ***
 ### 보유 기술
 #### 소프트웨어 개발자
-##### - Python, C/C++, C#, Java, Javascript, ReactJs, Flask, FastAPI, .net Framework, Oracle, MariaDB, MongoDB, SQLite, Windows, Linux(Ubuntu, Centos), MacOS
+##### - Python, C/C++, C#, Java, go, Javascript, ReactJS, Linux, Windows, .net Framework, MacOS, SQLite, Oracle, MariaDB, MongoDB 
 #### 데이터 엔지니어
-##### - Numpy, Pandas, Tensorflow, PyTorch, Keras, Hugging Face, Scikit-learn, Plotly, Dash, Streamlit, Ray, Shap, Alibi, Bcftools, Plink, Annovar, Scikit-allel
+##### - Pandas, Numpy, Tensorflow, Keras, Scikit-learn, PyTorch, Hugging Face, Plotly, Dash, Streamlit, Ray, Alibi, Shap, Bcftools, Plink, Annovar, Scikit-allel
 #### 클라우드 엔지니어
-##### - Docker, Kubernetes, Argo Workflows, Hera, Harbor, YAML, Tmux, Tmux-cssh
+##### - Docker, Kubernetes, Argo Workflows, Hera, Yaml, Harbor
 ***
 <!-- ### 학력
 #### 대전 보문고등학교
