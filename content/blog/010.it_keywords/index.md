@@ -36,5 +36,12 @@ draft: false
 - 비전 인코더, 언어모델 멀티모달 결합 모듈로 이루어짐
 ### 애자일 - 스크럼 방법론
 - 1~4주 단위의 짧은 주기 안에서 팀이 자율적으로 계획, 개발하고 피드백을 받아 제품을 지속적으로 발전시키는 프레임워크
-- 
+### 인프라 온 코드(Infrastructure as Code, IaC)
+- 인프라를 코드로 정의하여, 버전 관리와 자동화가 가능한 형태로 운영하는 방식
+- 서버, 네트워크, 방화벽, 로드밸런서 등을 코드로 구성·배포
+- Terraform
+- Pulumi
+- AWS CloudFormation
+- Azure Resource Manager
+- Google Cloud Deployment Manager
 ---
