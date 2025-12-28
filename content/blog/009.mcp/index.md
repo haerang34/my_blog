@@ -11,19 +11,17 @@ draft: false
 
 * * *
 
-**<br>
-**
-
 ## MCP란 무엇인가?
 
 #### MCP(Model Context Protocol)는 AI 애플리케이션을 외부 시스템에 연결하기 위한 오픈 소스 표준
 
-#### MCP를 사용하면 Claude나 ChatGPT와 같은 AI 애플리케이션이
+#### MCP를 사용하면 Claude나 ChatGPT와 같은 AI 애플리케이션에서 
 
 #### 데이터 소스(예: 로컬 파일, 데이터베이스), 도구(예: 검색 엔진, 계산기) 및 워크플로(예: 특수 프롬프트)에 연결하여 핵심 정보에 접근하고 작업을 수행
 
-> MCP는 AI 애플리케이션을 위한 USB-C 포트와 같습니다.<br>
-> USB-C가 전자 기기를 연결하는 표준화된 방식을 제공하는 것처럼,  
+
+> MCP는 AI 애플리케이션을 위한 USB-C 포트와 같습니다.  
+> USB-C가 전자 기기를 연결하는 표준화된 방식을 제공하는 것처럼,    
 > MCP는 AI 애플리케이션을 외부 시스템에 연결하는 표준화된 방식을 제공합니다.  
 
 ## MCP 활용법
@@ -45,7 +43,7 @@ draft: false
 
 <br>
 
-### **reference**
+### 참고 사이트
 
 [https://modelcontextprotocol.io/docs/getting-started/intro](https://modelcontextprotocol.io/docs/getting-started/intro)
 
