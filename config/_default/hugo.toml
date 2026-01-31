@@ -1,0 +1,7 @@
+# baseURL = 'https://example.org/'
+# languageCode = 'en-US'
+
+# title = 'My Awesome Blog'
+
+baseURL = 'https://haerang34.netlify.app/'
+defaultContentLanguage = "ko"

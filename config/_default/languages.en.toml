@@ -1,0 +1,17 @@
+languageCode = "en"
+languageName = "English"
+languageDirection = "ltr"
+weight = 2
+
+title = "Haerang34's Blog"
+
+[params.author]
+name = "Haerang34"
+image = "img/profile.png"
+headline = "A blog for IT professionals beyond developers and data engineers"
+bio = "software developer, data engineer, cloud engineer."
+links = [
+  { github = "https://www.github.com/haerang34" },
+  { linkedin = "https://www.linkedin.com/in/haerang34" },
+  { email = "mailto:kgwac34@gmail.com" },
+]

@@ -1,0 +1,17 @@
+languageCode = "ko"
+languageName = "한국어"
+languageDirection = "ltr"
+weight = 1
+
+title = "해랑34의 블로그"
+
+[params.author]
+name = "해랑34"
+image = "img/profile.png"
+headline = "IT 전문가를 향한 블로그"
+bio = "소프트웨어 개발자, 데이터 엔지니어, 클라우드 엔지니어."
+links = [
+  { github = "https://www.github.com/haerang34" },
+  { linkedin = "https://www.linkedin.com/in/haerang34" },
+  { email = "mailto:kgwac34@gmail.com" },
+]

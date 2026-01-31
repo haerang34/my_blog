@@ -1,0 +1,832 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="ko"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>ADP 정리 - 1 &middot; 해랑34의 블로그</title>
+    <meta name="title" content="ADP 정리 - 1 &middot; 해랑34의 블로그" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/css/main.bundle.min.58acb92913d5f4d9aa3080f4e42bd3e3fc10e101fc9dedf7c6e832f680cb1178.css"
+    integrity="sha256-WKy5KRPV9NmqMID05CvT4/wQ4QH8ne33xugy9oDLEXg="
+  />
+  
+    
+    
+    
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="http://localhost:1313/js/main.bundle.min.85588ca4a09487934eca6830f4d8ec6b443b96cf1895ddf10249e8f2ddddeb74.js"
+      integrity="sha256-hViMpKCUh5NOymgw9Njsa0Q7ls8Yld3xAkno8t3d63Q="
+      data-copy="복사"
+      data-copied="복사됨"
+    ></script>
+  
+  
+  <meta
+    name="description"
+    content="
+      ADP 공부 겸 이전 항목 복습1
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/blog/adp-1/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/blog/adp-1/">
+  <meta property="og:site_name" content="해랑34의 블로그">
+  <meta property="og:title" content="ADP 정리 - 1">
+  <meta property="og:description" content="ADP 공부 겸 이전 항목 복습1">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-10-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-14T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/blog/adp-1/feature-kdata.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/blog/adp-1/feature-kdata.png">
+  <meta name="twitter:title" content="ADP 정리 - 1">
+  <meta name="twitter:description" content="ADP 공부 겸 이전 항목 복습1">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "ADP 정리 - 1",
+    "headline": "ADP 정리 - 1",
+    "description": "ADP 공부 겸 이전 항목 복습1",
+    "abstract": "\u003ch1 id=\u00221과목---데이터의-이해\u0022 class=\u0022relative group\u0022\u003e1과목 - 데이터의 이해 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#1%ea%b3%bc%eb%aa%a9---%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%9d%98-%ec%9d%b4%ed%95%b4\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h1\u003e\u003ch3 id=\u0022데이터-유형\u0022 class=\u0022relative group\u0022\u003e데이터 유형 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%eb%8d%b0%ec%9d%b4%ed%84%b0-%ec%9c%a0%ed%98%95\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003ch4 id=\u0022정성적-데이터\u0022 class=\u0022relative group\u0022\u003e정성적 데이터 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%a0%95%ec%84%b1%ec%a0%81-%eb%8d%b0%ec%9d%b4%ed%84%b0\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e언어, 문자 (예 : 회사에 매출이 증가함 등)\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022정량적-데이터\u0022 class=\u0022relative group\u0022\u003e정량적 데이터 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%a0%95%eb%9f%89%ec%a0%81-%eb%8d%b0%ec%9d%b4%ed%84%b0\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e수치, 도형, 기호 (예 : 나이, 몸무게, 주가 등)\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022지식-경영\u0022 class=\u0022relative group\u0022\u003e지식 경영 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%a7%80%ec%8b%9d-%ea%b2%bd%ec%98%81\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003ch4 id=\u0022암묵지\u0022 class=\u0022relative group\u0022\u003e암묵지 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%95%94%eb%ac%b5%ec%a7%80\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e학습과 경험을 통해 개인에게 축적된 내면화된 지식\u003c\/li\u003e\n\u003cli\u003e개인에게 습득되어 있지만 겉으로 드러나지 않는 지식\u003c\/li\u003e\n\u003cli\u003e조직의 지식으로 공통화\u003c\/li\u003e\n\u003cli\u003e사회적으로 중요하지만 다른 사람에게 공유되기 어려움\u003c\/li\u003e\n\u003cli\u003e예 : 김장김치 담그기, 자전거 타기\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022형식지\u0022 class=\u0022relative group\u0022\u003e형식지 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ed%98%95%ec%8b%9d%ec%a7%80\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e문서나 매뉴얼처럼 형상화된 지식\u003c\/li\u003e\n\u003cli\u003e언어, 기호, 숫자로 표출화된 지식\u003c\/li\u003e\n\u003cli\u003e(표출화 - 개인에게 내재된 경험을 객관적인 데이터로 문서나 매체에 저장, 가공, 분석하는 과정)\u003c\/li\u003e\n\u003cli\u003e개인의 지식으로 연결화\u003c\/li\u003e\n\u003cli\u003e전달과 공유가 용이함\u003c\/li\u003e\n\u003cli\u003e예 : 교과서, 비디오, DB\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022dikw\u0022 class=\u0022relative group\u0022\u003eDIKW \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#dikw\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003ch4 id=\u0022데이터data\u0022 class=\u0022relative group\u0022\u003e데이터(Data) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%eb%8d%b0%ec%9d%b4%ed%84%b0data\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e가공하기 전의 데이터\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022정보information\u0022 class=\u0022relative group\u0022\u003e정보(Information) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%a0%95%eb%b3%b4information\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e의미를 부여한 데이터\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022지식knowledge\u0022 class=\u0022relative group\u0022\u003e지식(Knowledge) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%a7%80%ec%8b%9dknowledge\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e정보 패턴을 이해하여 예측한 결과물\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022지혜wisdom\u0022 class=\u0022relative group\u0022\u003e지혜(Wisdom) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%a7%80%ed%98%9cwisdom\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e이해를 바탕으로 도출되는 창의적 아이디어\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022db-특징\u0022 class=\u0022relative group\u0022\u003eDB 특징 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#db-%ed%8a%b9%ec%a7%95\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003ch4 id=\u0022통합된-데이터\u0022 class=\u0022relative group\u0022\u003e통합된 데이터 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ed%86%b5%ed%95%a9%eb%90%9c-%eb%8d%b0%ec%9d%b4%ed%84%b0\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e중복x\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022저장된-데이터\u0022 class=\u0022relative group\u0022\u003e저장된 데이터 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%a0%80%ec%9e%a5%eb%90%9c-%eb%8d%b0%ec%9d%b4%ed%84%b0\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e컴퓨터가 접근할 수 있는 저장 매체에 저장되는 것\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022공용-데이터\u0022 class=\u0022relative group\u0022\u003e공용 데이터 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ea%b3%b5%ec%9a%a9-%eb%8d%b0%ec%9d%b4%ed%84%b0\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e서로 다른 목적으로 데이터 공동 이용\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022변화되는-데이터\u0022 class=\u0022relative group\u0022\u003e변화되는 데이터 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%eb%b3%80%ed%99%94%eb%90%98%eb%8a%94-%eb%8d%b0%ec%9d%b4%ed%84%b0\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003eDB 현 시점의 상태를 나타냄, 항상 현재의 정확한 데이터 유지\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022db-활용\u0022 class=\u0022relative group\u0022\u003eDB 활용 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#db-%ed%99%9c%ec%9a%a9\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003ch4 id=\u0022oltpon-line-transaction-processing\u0022 class=\u0022relative group\u0022\u003eOLTP(On-Line Transaction Processing) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#oltpon-line-transaction-processing\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e호스트 컴퓨터가 데이터베이스를 엑세스하고, 바로 처리 결과를 돌려보내는 형태\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022olapon-line-analytical-processing\u0022 class=\u0022relative group\u0022\u003eOLAP(On-Line Analytical Processing) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#olapon-line-analytical-processing\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e쉽고 빠르게 다차원적인 데이터에 접근, 의사 결정에 활용할 수 있는 정보를 얻을 수 있게 해주는 기술\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022scmsupply-chain-management\u0022 class=\u0022relative group\u0022\u003eSCM(Supply Chain Management) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#scmsupply-chain-management\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e공급망 관리, 모든 공급망 단계 최적화 → 원하는 시간과 장소에 제공\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022제조\u0022 class=\u0022relative group\u0022\u003e제조 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%a0%9c%ec%a1%b0\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003ch4 id=\u0022erpenterprise-resource-planning\u0022 class=\u0022relative group\u0022\u003eERP(Enterprise Resource Planning) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#erpenterprise-resource-planning\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e경영자원을 하나의 통합 시스템으로 재구축\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022bibusiness-intelligence\u0022 class=\u0022relative group\u0022\u003eBI(Business Intelligence) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#bibusiness-intelligence\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e의사결정에 활용하는 일련의 프로세스\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022crmcustomer-relationship-management\u0022 class=\u0022relative group\u0022\u003eCRM(Customer Relationship Management) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#crmcustomer-relationship-management\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e고객 중심 자원을 극대화\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022rtereal-time-enterprise\u0022 class=\u0022relative group\u0022\u003eRTE(Real-Time Enterprise) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#rtereal-time-enterprise\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e회사 전 부문의 정보를 하나로 통합\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022금융\u0022 class=\u0022relative group\u0022\u003e금융 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ea%b8%88%ec%9c%b5\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003ch4 id=\u0022eaienterprise-application-integration\u0022 class=\u0022relative group\u0022\u003eEAI(Enterprise Application Integration) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#eaienterprise-application-integration\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e정보를 중앙 집중적으로 통합, 관리, 사용\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022edwenterprise-data-warehouse\u0022 class=\u0022relative group\u0022\u003eEDW(Enterprise Data Warehouse) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#edwenterprise-data-warehouse\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e다양한 분석 애플리케이션들을 위한 원천\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022유통\u0022 class=\u0022relative group\u0022\u003e유통 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%9c%a0%ed%86%b5\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003ch4 id=\u0022kmsknowledge-management-system\u0022 class=\u0022relative group\u0022\u003eKMS(Knowledge Management System) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#kmsknowledge-management-system\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e지식관리시스템\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022rfidradio-frequency-rf\u0022 class=\u0022relative group\u0022\u003eRFID(Radio Frequency, RF) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#rfidradio-frequency-rf\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e주파수를 이용해 ID를 식별하는 System\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022빅데이터의-이해\u0022 class=\u0022relative group\u0022\u003e빅데이터의 이해 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%9d%98-%ec%9d%b4%ed%95%b4\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h2\u003e\u003ch3 id=\u0022출현배경\u0022 class=\u0022relative group\u0022\u003e출현배경 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%b6%9c%ed%98%84%eb%b0%b0%ea%b2%bd\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003ch4 id=\u0022산업계\u0022 class=\u0022relative group\u0022\u003e산업계 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%82%b0%ec%97%85%ea%b3%84\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e고객 데이터 축적, 데이터에 숨어있는 가치 발굴\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022학계\u0022 class=\u0022relative group\u0022\u003e학계 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ed%95%99%ea%b3%84\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e거대 데이터 활용, 과학 확산, 아키텍처 및 통계 도구들이 발전\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022기술발전\u0022 class=\u0022relative group\u0022\u003e기술발전 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ea%b8%b0%ec%88%a0%eb%b0%9c%ec%a0%84\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e관련기술의 발달\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022빅데이터의-기능\u0022 class=\u0022relative group\u0022\u003e빅데이터의 기능 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%9d%98-%ea%b8%b0%eb%8a%a5\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003ch4 id=\u0022산업혁명의-석탄-철\u0022 class=\u0022relative group\u0022\u003e산업혁명의 석탄, 철 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%82%b0%ec%97%85%ed%98%81%eb%aa%85%ec%9d%98-%ec%84%9d%ed%83%84-%ec%b2%a0\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e생산성을 획기적으로 끌어올려 사회\/경제\/문화\/생활 전반에 혁명적 변화\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u002221세기의-원유\u0022 class=\u0022relative group\u0022\u003e21세기의 원유 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#21%ec%84%b8%ea%b8%b0%ec%9d%98-%ec%9b%90%ec%9c%a0\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e정보를 제공함으로써 생산성을 향상시키고, 새로운 범주의 산업을 만들어냄\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022렌즈\u0022 class=\u0022relative group\u0022\u003e렌즈 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%eb%a0%8c%ec%a6%88\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e렌즈를 통해 현미경이 생물학 발전에 미쳤던 영향만큼이나 데이터가 산업 발전에 영향을 미칠것으로 기대, Ngram Viewer\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022플랫폼\u0022 class=\u0022relative group\u0022\u003e플랫폼 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ed%94%8c%eb%9e%ab%ed%8f%bc\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e‘공동 활용의 목적으로 구출된 유무형의 구조물’, 카카오톡, 페이스북\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022빅데이터가-만들어낸-변화\u0022 class=\u0022relative group\u0022\u003e빅데이터가 만들어낸 변화 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%ea%b0%80-%eb%a7%8c%eb%93%a4%ec%96%b4%eb%82%b8-%eb%b3%80%ed%99%94\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003cul\u003e\n\u003cli\u003e사전처리 → 사후처리\u003c\/li\u003e\n\u003cli\u003e표본조사 → 전수조사\u003c\/li\u003e\n\u003cli\u003e질 → 양\u003c\/li\u003e\n\u003cli\u003e인과관계 → 상관관계\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022빅데이터-가치-산정이-어려운-이유\u0022 class=\u0022relative group\u0022\u003e빅데이터 가치 산정이 어려운 이유 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0-%ea%b0%80%ec%b9%98-%ec%82%b0%ec%a0%95%ec%9d%b4-%ec%96%b4%eb%a0%a4%ec%9a%b4-%ec%9d%b4%ec%9c%a0\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003ch4 id=\u0022데이터-활용방식\u0022 class=\u0022relative group\u0022\u003e데이터 활용방식 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%eb%8d%b0%ec%9d%b4%ed%84%b0-%ed%99%9c%ec%9a%a9%eb%b0%a9%ec%8b%9d\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e재사용, 재조합, 다목적용 데이터 개발 등이 일반화\u003c\/li\u003e\n\u003cli\u003e이로 인해 누가 언제 어디서 데이터를 활용할지 알 수 없게 됨\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022새로운-가치-창출\u0022 class=\u0022relative group\u0022\u003e새로운 가치 창출 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%83%88%eb%a1%9c%ec%9a%b4-%ea%b0%80%ec%b9%98-%ec%b0%bd%ec%b6%9c\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e‘기존에 없던 가치’를 창출\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022분석-기술-발전\u0022 class=\u0022relative group\u0022\u003e분석 기술 발전 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%eb%b6%84%ec%84%9d-%ea%b8%b0%ec%88%a0-%eb%b0%9c%ec%a0%84\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e새로운 분석 기법이 등장한다면 거대한 가치있는 데이터가 될 수 있음\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022빅데이터-활용-기본-테크닉\u0022 class=\u0022relative group\u0022\u003e빅데이터 활용 기본 테크닉 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0-%ed%99%9c%ec%9a%a9-%ea%b8%b0%eb%b3%b8-%ed%85%8c%ed%81%ac%eb%8b%89\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003ch4 id=\u0022연관규칙학습\u0022 class=\u0022relative group\u0022\u003e연관규칙학습 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%97%b0%ea%b4%80%ea%b7%9c%ec%b9%99%ed%95%99%ec%8a%b5\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e커피를 구매하는 사람이 탄산음료를 더 많이 사는가?\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022유형분석\u0022 class=\u0022relative group\u0022\u003e유형분석 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%9c%a0%ed%98%95%eb%b6%84%ec%84%9d\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e이 사용자는 어떤 특성을 가진 집단에 속하는가?\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022유전자-알고리즘\u0022 class=\u0022relative group\u0022\u003e유전자 알고리즘 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%9c%a0%ec%a0%84%ec%9e%90-%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e최대의 시청률을 얻으려면 어떤 프로그램을 어떤 시간대에 방송해야 하는가?\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022기계학습\u0022 class=\u0022relative group\u0022\u003e기계학습 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ea%b8%b0%ea%b3%84%ed%95%99%ec%8a%b5\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e기존의 시청 기록을 바탕으로 시청자가 현재 보유한 영화 중에서 어떤 것을 가장 보고 싶어할까?\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022회귀분석\u0022 class=\u0022relative group\u0022\u003e회귀분석 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ed%9a%8c%ea%b7%80%eb%b6%84%ec%84%9d\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e구매자의 나이가 구매 차량의 타입에 어떤 영향을 미치는가?\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022감정분석\u0022 class=\u0022relative group\u0022\u003e감정분석 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ea%b0%90%ec%a0%95%eb%b6%84%ec%84%9d\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e새로운 환불 정책에 대한 고객의 평가는 어떤가?\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch4 id=\u0022소셜네트워크분석사회관계망분석\u0022 class=\u0022relative group\u0022\u003e소셜네트워크분석(=사회관계망분석) \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%86%8c%ec%85%9c%eb%84%a4%ed%8a%b8%ec%9b%8c%ed%81%ac%eb%b6%84%ec%84%9d%ec%82%ac%ed%9a%8c%ea%b4%80%ea%b3%84%eb%a7%9d%eb%b6%84%ec%84%9d\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h4\u003e\u003cul\u003e\n\u003cli\u003e고객들 간 관계망은 어떻게 구성되어있나?\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022외부-환경적-측면에서-본-인문학-열풍의-이유\u0022 class=\u0022relative group\u0022\u003e외부 환경적 측면에서 본 인문학 열풍의 이유 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%ec%99%b8%eb%b6%80-%ed%99%98%ea%b2%bd%ec%a0%81-%ec%b8%a1%eb%a9%b4%ec%97%90%ec%84%9c-%eb%b3%b8-%ec%9d%b8%eb%ac%b8%ed%95%99-%ec%97%b4%ed%92%8d%ec%9d%98-%ec%9d%b4%ec%9c%a0\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003cul\u003e\n\u003cli\u003e컨버전스 → 디버전스\u003c\/li\u003e\n\u003cli\u003e생산 → 서비스\u003c\/li\u003e\n\u003cli\u003e생산 → 시장창조\u003c\/li\u003e\n\u003c\/ul\u003e",
+    "inLanguage": "ko",
+    "url" : "http:\/\/localhost:1313\/blog\/adp-1\/",
+    "author" : {
+      "@type": "Person",
+      "name": "해랑34"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-10-14T00:00:00\u002b00:00",
+    "datePublished": "2025-10-14T00:00:00\u002b00:00",
+    
+    "dateModified": "2025-10-14T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "516"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/blog/",
+       "name": "",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "name": "Adp 정리 1",
+       "position": 3
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="해랑34" />
+  
+  
+    
+      <link href="https://www.github.com/haerang34" rel="me" />
+    
+      <link href="https://www.linkedin.com/in/haerang34" rel="me" />
+    
+      <link href="mailto:kgwac34@gmail.com" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >메인 콘텐츠로 이동하기</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >해랑34의 블로그</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/blog/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >블로그</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                
+                
+                  <button
+                    id="search-button-1"
+                    title="검색 (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        ADP 정리 - 1
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-10-14 00:00:00 &#43;0000 UTC">2025년 10월 14일</time>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+        <div class="prose">
+          
+          
+          
+          
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mb-6 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="http://localhost:1313/blog/adp-1/feature-kdata_hu_a129981e4b875ddc.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="200"
+        height="200"
+        class="mb-6 rounded-md"
+        
+        
+        
+          src="http://localhost:1313/blog/adp-1/feature-kdata.png"
+        
+      />
+    </picture>
+  
+
+
+          
+        </div>
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <h1 id="1과목---데이터의-이해" class="relative group">1과목 - 데이터의 이해 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1%ea%b3%bc%eb%aa%a9---%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%9d%98-%ec%9d%b4%ed%95%b4" aria-label="앵커">#</a></span></h1><h3 id="데이터-유형" class="relative group">데이터 유형 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%8d%b0%ec%9d%b4%ed%84%b0-%ec%9c%a0%ed%98%95" aria-label="앵커">#</a></span></h3><h4 id="정성적-데이터" class="relative group">정성적 데이터 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%a0%95%ec%84%b1%ec%a0%81-%eb%8d%b0%ec%9d%b4%ed%84%b0" aria-label="앵커">#</a></span></h4><ul>
+<li>언어, 문자 (예 : 회사에 매출이 증가함 등)</li>
+</ul>
+<h4 id="정량적-데이터" class="relative group">정량적 데이터 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%a0%95%eb%9f%89%ec%a0%81-%eb%8d%b0%ec%9d%b4%ed%84%b0" aria-label="앵커">#</a></span></h4><ul>
+<li>수치, 도형, 기호 (예 : 나이, 몸무게, 주가 등)</li>
+</ul>
+<h3 id="지식-경영" class="relative group">지식 경영 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%a7%80%ec%8b%9d-%ea%b2%bd%ec%98%81" aria-label="앵커">#</a></span></h3><h4 id="암묵지" class="relative group">암묵지 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%95%94%eb%ac%b5%ec%a7%80" aria-label="앵커">#</a></span></h4><ul>
+<li>학습과 경험을 통해 개인에게 축적된 내면화된 지식</li>
+<li>개인에게 습득되어 있지만 겉으로 드러나지 않는 지식</li>
+<li>조직의 지식으로 공통화</li>
+<li>사회적으로 중요하지만 다른 사람에게 공유되기 어려움</li>
+<li>예 : 김장김치 담그기, 자전거 타기</li>
+</ul>
+<h4 id="형식지" class="relative group">형식지 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ed%98%95%ec%8b%9d%ec%a7%80" aria-label="앵커">#</a></span></h4><ul>
+<li>문서나 매뉴얼처럼 형상화된 지식</li>
+<li>언어, 기호, 숫자로 표출화된 지식</li>
+<li>(표출화 - 개인에게 내재된 경험을 객관적인 데이터로 문서나 매체에 저장, 가공, 분석하는 과정)</li>
+<li>개인의 지식으로 연결화</li>
+<li>전달과 공유가 용이함</li>
+<li>예 : 교과서, 비디오, DB</li>
+</ul>
+<h3 id="dikw" class="relative group">DIKW <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#dikw" aria-label="앵커">#</a></span></h3><h4 id="데이터data" class="relative group">데이터(Data) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%8d%b0%ec%9d%b4%ed%84%b0data" aria-label="앵커">#</a></span></h4><ul>
+<li>가공하기 전의 데이터</li>
+</ul>
+<h4 id="정보information" class="relative group">정보(Information) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%a0%95%eb%b3%b4information" aria-label="앵커">#</a></span></h4><ul>
+<li>의미를 부여한 데이터</li>
+</ul>
+<h4 id="지식knowledge" class="relative group">지식(Knowledge) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%a7%80%ec%8b%9dknowledge" aria-label="앵커">#</a></span></h4><ul>
+<li>정보 패턴을 이해하여 예측한 결과물</li>
+</ul>
+<h4 id="지혜wisdom" class="relative group">지혜(Wisdom) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%a7%80%ed%98%9cwisdom" aria-label="앵커">#</a></span></h4><ul>
+<li>이해를 바탕으로 도출되는 창의적 아이디어</li>
+</ul>
+<h3 id="db-특징" class="relative group">DB 특징 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#db-%ed%8a%b9%ec%a7%95" aria-label="앵커">#</a></span></h3><h4 id="통합된-데이터" class="relative group">통합된 데이터 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ed%86%b5%ed%95%a9%eb%90%9c-%eb%8d%b0%ec%9d%b4%ed%84%b0" aria-label="앵커">#</a></span></h4><ul>
+<li>중복x</li>
+</ul>
+<h4 id="저장된-데이터" class="relative group">저장된 데이터 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%a0%80%ec%9e%a5%eb%90%9c-%eb%8d%b0%ec%9d%b4%ed%84%b0" aria-label="앵커">#</a></span></h4><ul>
+<li>컴퓨터가 접근할 수 있는 저장 매체에 저장되는 것</li>
+</ul>
+<h4 id="공용-데이터" class="relative group">공용 데이터 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ea%b3%b5%ec%9a%a9-%eb%8d%b0%ec%9d%b4%ed%84%b0" aria-label="앵커">#</a></span></h4><ul>
+<li>서로 다른 목적으로 데이터 공동 이용</li>
+</ul>
+<h4 id="변화되는-데이터" class="relative group">변화되는 데이터 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%b3%80%ed%99%94%eb%90%98%eb%8a%94-%eb%8d%b0%ec%9d%b4%ed%84%b0" aria-label="앵커">#</a></span></h4><ul>
+<li>DB 현 시점의 상태를 나타냄, 항상 현재의 정확한 데이터 유지</li>
+</ul>
+<h3 id="db-활용" class="relative group">DB 활용 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#db-%ed%99%9c%ec%9a%a9" aria-label="앵커">#</a></span></h3><h4 id="oltpon-line-transaction-processing" class="relative group">OLTP(On-Line Transaction Processing) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#oltpon-line-transaction-processing" aria-label="앵커">#</a></span></h4><ul>
+<li>호스트 컴퓨터가 데이터베이스를 엑세스하고, 바로 처리 결과를 돌려보내는 형태</li>
+</ul>
+<h4 id="olapon-line-analytical-processing" class="relative group">OLAP(On-Line Analytical Processing) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#olapon-line-analytical-processing" aria-label="앵커">#</a></span></h4><ul>
+<li>쉽고 빠르게 다차원적인 데이터에 접근, 의사 결정에 활용할 수 있는 정보를 얻을 수 있게 해주는 기술</li>
+</ul>
+<h4 id="scmsupply-chain-management" class="relative group">SCM(Supply Chain Management) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#scmsupply-chain-management" aria-label="앵커">#</a></span></h4><ul>
+<li>공급망 관리, 모든 공급망 단계 최적화 → 원하는 시간과 장소에 제공</li>
+</ul>
+<h3 id="제조" class="relative group">제조 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%a0%9c%ec%a1%b0" aria-label="앵커">#</a></span></h3><h4 id="erpenterprise-resource-planning" class="relative group">ERP(Enterprise Resource Planning) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#erpenterprise-resource-planning" aria-label="앵커">#</a></span></h4><ul>
+<li>경영자원을 하나의 통합 시스템으로 재구축</li>
+</ul>
+<h4 id="bibusiness-intelligence" class="relative group">BI(Business Intelligence) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#bibusiness-intelligence" aria-label="앵커">#</a></span></h4><ul>
+<li>의사결정에 활용하는 일련의 프로세스</li>
+</ul>
+<h4 id="crmcustomer-relationship-management" class="relative group">CRM(Customer Relationship Management) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#crmcustomer-relationship-management" aria-label="앵커">#</a></span></h4><ul>
+<li>고객 중심 자원을 극대화</li>
+</ul>
+<h4 id="rtereal-time-enterprise" class="relative group">RTE(Real-Time Enterprise) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#rtereal-time-enterprise" aria-label="앵커">#</a></span></h4><ul>
+<li>회사 전 부문의 정보를 하나로 통합</li>
+</ul>
+<h3 id="금융" class="relative group">금융 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ea%b8%88%ec%9c%b5" aria-label="앵커">#</a></span></h3><h4 id="eaienterprise-application-integration" class="relative group">EAI(Enterprise Application Integration) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#eaienterprise-application-integration" aria-label="앵커">#</a></span></h4><ul>
+<li>정보를 중앙 집중적으로 통합, 관리, 사용</li>
+</ul>
+<h4 id="edwenterprise-data-warehouse" class="relative group">EDW(Enterprise Data Warehouse) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#edwenterprise-data-warehouse" aria-label="앵커">#</a></span></h4><ul>
+<li>다양한 분석 애플리케이션들을 위한 원천</li>
+</ul>
+<h3 id="유통" class="relative group">유통 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%9c%a0%ed%86%b5" aria-label="앵커">#</a></span></h3><h4 id="kmsknowledge-management-system" class="relative group">KMS(Knowledge Management System) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#kmsknowledge-management-system" aria-label="앵커">#</a></span></h4><ul>
+<li>지식관리시스템</li>
+</ul>
+<h4 id="rfidradio-frequency-rf" class="relative group">RFID(Radio Frequency, RF) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#rfidradio-frequency-rf" aria-label="앵커">#</a></span></h4><ul>
+<li>주파수를 이용해 ID를 식별하는 System</li>
+</ul>
+<h2 id="빅데이터의-이해" class="relative group">빅데이터의 이해 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%9d%98-%ec%9d%b4%ed%95%b4" aria-label="앵커">#</a></span></h2><h3 id="출현배경" class="relative group">출현배경 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%b6%9c%ed%98%84%eb%b0%b0%ea%b2%bd" aria-label="앵커">#</a></span></h3><h4 id="산업계" class="relative group">산업계 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%82%b0%ec%97%85%ea%b3%84" aria-label="앵커">#</a></span></h4><ul>
+<li>고객 데이터 축적, 데이터에 숨어있는 가치 발굴</li>
+</ul>
+<h4 id="학계" class="relative group">학계 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ed%95%99%ea%b3%84" aria-label="앵커">#</a></span></h4><ul>
+<li>거대 데이터 활용, 과학 확산, 아키텍처 및 통계 도구들이 발전</li>
+</ul>
+<h4 id="기술발전" class="relative group">기술발전 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ea%b8%b0%ec%88%a0%eb%b0%9c%ec%a0%84" aria-label="앵커">#</a></span></h4><ul>
+<li>관련기술의 발달</li>
+</ul>
+<h3 id="빅데이터의-기능" class="relative group">빅데이터의 기능 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%9d%98-%ea%b8%b0%eb%8a%a5" aria-label="앵커">#</a></span></h3><h4 id="산업혁명의-석탄-철" class="relative group">산업혁명의 석탄, 철 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%82%b0%ec%97%85%ed%98%81%eb%aa%85%ec%9d%98-%ec%84%9d%ed%83%84-%ec%b2%a0" aria-label="앵커">#</a></span></h4><ul>
+<li>생산성을 획기적으로 끌어올려 사회/경제/문화/생활 전반에 혁명적 변화</li>
+</ul>
+<h4 id="21세기의-원유" class="relative group">21세기의 원유 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#21%ec%84%b8%ea%b8%b0%ec%9d%98-%ec%9b%90%ec%9c%a0" aria-label="앵커">#</a></span></h4><ul>
+<li>정보를 제공함으로써 생산성을 향상시키고, 새로운 범주의 산업을 만들어냄</li>
+</ul>
+<h4 id="렌즈" class="relative group">렌즈 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%a0%8c%ec%a6%88" aria-label="앵커">#</a></span></h4><ul>
+<li>렌즈를 통해 현미경이 생물학 발전에 미쳤던 영향만큼이나 데이터가 산업 발전에 영향을 미칠것으로 기대, Ngram Viewer</li>
+</ul>
+<h4 id="플랫폼" class="relative group">플랫폼 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ed%94%8c%eb%9e%ab%ed%8f%bc" aria-label="앵커">#</a></span></h4><ul>
+<li>‘공동 활용의 목적으로 구출된 유무형의 구조물’, 카카오톡, 페이스북</li>
+</ul>
+<h3 id="빅데이터가-만들어낸-변화" class="relative group">빅데이터가 만들어낸 변화 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%ea%b0%80-%eb%a7%8c%eb%93%a4%ec%96%b4%eb%82%b8-%eb%b3%80%ed%99%94" aria-label="앵커">#</a></span></h3><ul>
+<li>사전처리 → 사후처리</li>
+<li>표본조사 → 전수조사</li>
+<li>질 → 양</li>
+<li>인과관계 → 상관관계</li>
+</ul>
+<h3 id="빅데이터-가치-산정이-어려운-이유" class="relative group">빅데이터 가치 산정이 어려운 이유 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0-%ea%b0%80%ec%b9%98-%ec%82%b0%ec%a0%95%ec%9d%b4-%ec%96%b4%eb%a0%a4%ec%9a%b4-%ec%9d%b4%ec%9c%a0" aria-label="앵커">#</a></span></h3><h4 id="데이터-활용방식" class="relative group">데이터 활용방식 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%8d%b0%ec%9d%b4%ed%84%b0-%ed%99%9c%ec%9a%a9%eb%b0%a9%ec%8b%9d" aria-label="앵커">#</a></span></h4><ul>
+<li>재사용, 재조합, 다목적용 데이터 개발 등이 일반화</li>
+<li>이로 인해 누가 언제 어디서 데이터를 활용할지 알 수 없게 됨</li>
+</ul>
+<h4 id="새로운-가치-창출" class="relative group">새로운 가치 창출 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%83%88%eb%a1%9c%ec%9a%b4-%ea%b0%80%ec%b9%98-%ec%b0%bd%ec%b6%9c" aria-label="앵커">#</a></span></h4><ul>
+<li>‘기존에 없던 가치’를 창출</li>
+</ul>
+<h4 id="분석-기술-발전" class="relative group">분석 기술 발전 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%b6%84%ec%84%9d-%ea%b8%b0%ec%88%a0-%eb%b0%9c%ec%a0%84" aria-label="앵커">#</a></span></h4><ul>
+<li>새로운 분석 기법이 등장한다면 거대한 가치있는 데이터가 될 수 있음</li>
+</ul>
+<h3 id="빅데이터-활용-기본-테크닉" class="relative group">빅데이터 활용 기본 테크닉 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0-%ed%99%9c%ec%9a%a9-%ea%b8%b0%eb%b3%b8-%ed%85%8c%ed%81%ac%eb%8b%89" aria-label="앵커">#</a></span></h3><h4 id="연관규칙학습" class="relative group">연관규칙학습 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%97%b0%ea%b4%80%ea%b7%9c%ec%b9%99%ed%95%99%ec%8a%b5" aria-label="앵커">#</a></span></h4><ul>
+<li>커피를 구매하는 사람이 탄산음료를 더 많이 사는가?</li>
+</ul>
+<h4 id="유형분석" class="relative group">유형분석 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%9c%a0%ed%98%95%eb%b6%84%ec%84%9d" aria-label="앵커">#</a></span></h4><ul>
+<li>이 사용자는 어떤 특성을 가진 집단에 속하는가?</li>
+</ul>
+<h4 id="유전자-알고리즘" class="relative group">유전자 알고리즘 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%9c%a0%ec%a0%84%ec%9e%90-%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98" aria-label="앵커">#</a></span></h4><ul>
+<li>최대의 시청률을 얻으려면 어떤 프로그램을 어떤 시간대에 방송해야 하는가?</li>
+</ul>
+<h4 id="기계학습" class="relative group">기계학습 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ea%b8%b0%ea%b3%84%ed%95%99%ec%8a%b5" aria-label="앵커">#</a></span></h4><ul>
+<li>기존의 시청 기록을 바탕으로 시청자가 현재 보유한 영화 중에서 어떤 것을 가장 보고 싶어할까?</li>
+</ul>
+<h4 id="회귀분석" class="relative group">회귀분석 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ed%9a%8c%ea%b7%80%eb%b6%84%ec%84%9d" aria-label="앵커">#</a></span></h4><ul>
+<li>구매자의 나이가 구매 차량의 타입에 어떤 영향을 미치는가?</li>
+</ul>
+<h4 id="감정분석" class="relative group">감정분석 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ea%b0%90%ec%a0%95%eb%b6%84%ec%84%9d" aria-label="앵커">#</a></span></h4><ul>
+<li>새로운 환불 정책에 대한 고객의 평가는 어떤가?</li>
+</ul>
+<h4 id="소셜네트워크분석사회관계망분석" class="relative group">소셜네트워크분석(=사회관계망분석) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%86%8c%ec%85%9c%eb%84%a4%ed%8a%b8%ec%9b%8c%ed%81%ac%eb%b6%84%ec%84%9d%ec%82%ac%ed%9a%8c%ea%b4%80%ea%b3%84%eb%a7%9d%eb%b6%84%ec%84%9d" aria-label="앵커">#</a></span></h4><ul>
+<li>고객들 간 관계망은 어떻게 구성되어있나?</li>
+</ul>
+<h3 id="외부-환경적-측면에서-본-인문학-열풍의-이유" class="relative group">외부 환경적 측면에서 본 인문학 열풍의 이유 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%99%b8%eb%b6%80-%ed%99%98%ea%b2%bd%ec%a0%81-%ec%b8%a1%eb%a9%b4%ec%97%90%ec%84%9c-%eb%b3%b8-%ec%9d%b8%eb%ac%b8%ed%95%99-%ec%97%b4%ed%92%8d%ec%9d%98-%ec%9d%b4%ec%9c%a0" aria-label="앵커">#</a></span></h3><ul>
+<li>컨버전스 → 디버전스</li>
+<li>생산 → 서비스</li>
+<li>생산 → 시장창조</li>
+</ul>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+        
+        
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+      
+    >
+      
+      
+      
+      
+      <img
+        width="1280"
+        height="1280"
+        class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+        alt="해랑34"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/img/profile_hu_d5b2ca6afdb2d6bc.png" srcset="http://localhost:1313/img/profile_hu_9d151493c906c6fb.png 330w,http://localhost:1313/img/profile_hu_d5b2ca6afdb2d6bc.png 660w
+          
+            ,http://localhost:1313/img/profile_hu_f7b686923a5839c9.png 1024w
+          
+          
+            ,http://localhost:1313/img/profile.png 1280w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          글쓴이
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          해랑34
+        </div>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">소프트웨어 개발자, 데이터 엔지니어, 클라우드 엔지니어.</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://www.github.com/haerang34"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://www.linkedin.com/in/haerang34"
+          target="_blank"
+          aria-label="Linkedin"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="mailto:kgwac34@gmail.com"
+          target="_blank"
+          aria-label="Email"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="http://localhost:1313/blog/slidev/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Slidev 소개</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-09-22 00:00:00 &#43;0000 UTC">2025년 9월 22일</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="http://localhost:1313/blog/adp-2/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >ADP 정리 - 2</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-15 00:00:00 &#43;0000 UTC">2025년 10월 15일</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="위로 스크롤"
+            title="위로 스크롤"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+    <nav class="pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+      <ul class="flex list-none flex-col sm:flex-row">
+        
+          
+          <li class="group mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0">
+            
+              <a
+                href="/about/"
+                title="해랑34 정보"
+                
+                ><span
+                    class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                    >정보</span
+                  >
+                </a
+              >
+            
+          </li>
+        
+      </ul>
+    </nav>
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            &copy;
+            2026
+            해랑34
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+        <div
+          class="me-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        >
+          <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+            <div
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
+              title="다크 모드로 전환"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+            </div>
+            <div
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
+              title="라이트 모드로 전환"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+            </div>
+          </button>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="http://localhost:1313/"
+>
+  <div
+    id="search-modal"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="검색"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="닫기 (Esc)"
+      >
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto overflow-auto px-2">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

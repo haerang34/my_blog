@@ -1,0 +1,17 @@
+[[main]]
+  name = "블로그"
+  pageRef = "/blog"
+  weight = 10
+
+[[main]]
+  identifier = "검색"
+  weight = 30
+  [main.params]
+    action = "search"
+    icon = "search"
+
+[[footer]]
+  name = "정보"
+  pageRef = "/about"
+  weight = 10
+  

@@ -1,0 +1,787 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="ko"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>n8n - 이벤트 기반 자동화 도구 &middot; 해랑34의 블로그</title>
+    <meta name="title" content="n8n - 이벤트 기반 자동화 도구 &middot; 해랑34의 블로그" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/css/main.bundle.min.58acb92913d5f4d9aa3080f4e42bd3e3fc10e101fc9dedf7c6e832f680cb1178.css"
+    integrity="sha256-WKy5KRPV9NmqMID05CvT4/wQ4QH8ne33xugy9oDLEXg="
+  />
+  
+    
+    
+    
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="http://localhost:1313/js/main.bundle.min.85588ca4a09487934eca6830f4d8ec6b443b96cf1895ddf10249e8f2ddddeb74.js"
+      integrity="sha256-hViMpKCUh5NOymgw9Njsa0Q7ls8Yld3xAkno8t3d63Q="
+      data-copy="복사"
+      data-copied="복사됨"
+    ></script>
+  
+  
+  <meta
+    name="description"
+    content="
+      n8n 설명
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/blog/n8n/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/blog/n8n/">
+  <meta property="og:site_name" content="해랑34의 블로그">
+  <meta property="og:title" content="n8n - 이벤트 기반 자동화 도구">
+  <meta property="og:description" content="n8n 설명">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2026-01-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-01-31T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/blog/n8n/feature-n8n.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/blog/n8n/feature-n8n.png">
+  <meta name="twitter:title" content="n8n - 이벤트 기반 자동화 도구">
+  <meta name="twitter:description" content="n8n 설명">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "n8n - 이벤트 기반 자동화 도구",
+    "headline": "n8n - 이벤트 기반 자동화 도구",
+    "description": "n8n 설명",
+    "abstract": "\u003ch1 id=\u0022n8n---이벤트-기반-자동화-도구\u0022 class=\u0022relative group\u0022\u003en8n - 이벤트 기반 자동화 도구 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#n8n---%ec%9d%b4%eb%b2%a4%ed%8a%b8-%ea%b8%b0%eb%b0%98-%ec%9e%90%eb%8f%99%ed%99%94-%eb%8f%84%ea%b5%ac\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h1\u003e\u003chr\u003e\n\u003ch3 id=\u00221-n8n이란\u0022 class=\u0022relative group\u0022\u003e1. n8n이란? \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#1-n8n%ec%9d%b4%eb%9e%80\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003cul\u003e\n\u003cli\u003e이벤트 기반 자동화 도구\u003c\/li\u003e\n\u003cli\u003e다양한 앱·서비스를 노드(Node) 로 연결\u003c\/li\u003e\n\u003cli\u003e조건 분기, 반복, 코드 실행까지 가능\u003c\/li\u003e\n\u003cli\u003e오픈소스 (Self-host 가능)\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c!-- raw HTML omitted --\u003e\n\u003ch3 id=\u00222-활용-예시\u0022 class=\u0022relative group\u0022\u003e\u003cstrong\u003e2. 활용 예시\u003c\/strong\u003e \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#2-%ed%99%9c%ec%9a%a9-%ec%98%88%ec%8b%9c\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003col\u003e\n\u003cli\u003e업무 자동화\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003e이메일 수신 → 첨부파일 저장 → Slack 알림\u003c\/li\u003e\n\u003cli\u003eGoogle Sheets 업데이트 → 보고서 생성 → 메일 발송\u003c\/li\u003e\n\u003cli\u003e서버 로그 발생 → 필터링 → 장애 알림\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003col start=\u00222\u0022\u003e\n\u003cli\u003eAPI 오케스트레이션\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003e여러 REST API 호출\u003c\/li\u003e\n\u003cli\u003e인증 토큰 처리\u003c\/li\u003e\n\u003cli\u003e응답 파싱 후 다음 API에 전달\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003col start=\u00223\u0022\u003e\n\u003cli\u003e데이터 처리 파이프라인\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003e크롤링\u003c\/li\u003e\n\u003cli\u003e데이터 정제\u003c\/li\u003e\n\u003cli\u003eDB 저장 (MySQL, PostgreSQL, MongoDB 등)\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003col start=\u00224\u0022\u003e\n\u003cli\u003eAI 연계 자동화\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003eOpenAI \/ LLM 호출\u003c\/li\u003e\n\u003cli\u003e텍스트 요약, 분류, 번역 자동화\u003c\/li\u003e\n\u003cli\u003e챗봇 백엔드 워크플로우\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c!-- raw HTML omitted --\u003e\n\u003ch3 id=\u00223-핵심-개념\u0022 class=\u0022relative group\u0022\u003e3. 핵심 개념 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#3-%ed%95%b5%ec%8b%ac-%ea%b0%9c%eb%85%90\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003col\u003e\n\u003cli\u003eNode\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003e하나의 작업 단위\u003c\/li\u003e\n\u003cli\u003e예: HTTP Request, IF, Function, Webhook, Slack\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c!-- raw HTML omitted --\u003e\n\u003col start=\u00222\u0022\u003e\n\u003cli\u003eWorkflow\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003e노드들을 연결한 전체 자동화 시나리오\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c!-- raw HTML omitted --\u003e\n\u003col start=\u00223\u0022\u003e\n\u003cli\u003eTrigger\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003e워크플로우를 시작시키는 조건\u003c\/li\u003e\n\u003cli\u003eWebhook, Cron, 이메일 수신, 앱 이벤트 등\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c!-- raw HTML omitted --\u003e\n\u003col start=\u00224\u0022\u003e\n\u003cli\u003eExecution\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003e워크플로우가 실제로 한 번 실행된 기록\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u00224-n8n의-강점\u0022 class=\u0022relative group\u0022\u003e4. n8n의 강점 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#4-n8n%ec%9d%98-%ea%b0%95%ec%a0%90\u0022 aria-label=\u0022앵커\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003col\u003e\n\u003cli\u003e개발자 친화적\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003eJavaScript 코드 직접 작성 가능 (Function \/ Code 노드)\u003c\/li\u003e\n\u003cli\u003eJSON, HTTP, 인증 흐름을 그대로 다룸\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c!-- raw HTML omitted --\u003e\n\u003col start=\u00222\u0022\u003e\n\u003cli\u003eSelf-host 가능\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003e데이터 외부 유출 없이 내부 서버 운영 가능\u003c\/li\u003e\n\u003cli\u003e보안·비용 통제에 유리\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c!-- raw HTML omitted --\u003e\n\u003col start=\u00223\u0022\u003e\n\u003cli\u003e자유도 높음\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003eZapier보다 \u003cstrong\u003e조건\/반복\/커스텀 로직\u003c\/strong\u003e이 강력\u003c\/li\u003e\n\u003cli\u003e복잡한 워크플로우 구성 가능\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c!-- raw HTML omitted --\u003e\n\u003col start=\u00224\u0022\u003e\n\u003cli\u003e비용 효율\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003e자가호스팅 시 실행 횟수 제한 없음\u003c\/li\u003e\n\u003cli\u003eSaaS 대비 비용 절감\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c!-- raw HTML omitted --\u003e",
+    "inLanguage": "ko",
+    "url" : "http:\/\/localhost:1313\/blog\/n8n\/",
+    "author" : {
+      "@type": "Person",
+      "name": "해랑34"
+    },
+    "copyrightYear": "2026",
+    "dateCreated": "2026-01-31T00:00:00\u002b00:00",
+    "datePublished": "2026-01-31T00:00:00\u002b00:00",
+    
+    "dateModified": "2026-01-31T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "196"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/blog/",
+       "name": "",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "name": "N8n 이벤트 기반 자동화 도구",
+       "position": 3
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="해랑34" />
+  
+  
+    
+      <link href="https://www.github.com/haerang34" rel="me" />
+    
+      <link href="https://www.linkedin.com/in/haerang34" rel="me" />
+    
+      <link href="mailto:kgwac34@gmail.com" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >메인 콘텐츠로 이동하기</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >해랑34의 블로그</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/blog/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >블로그</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                
+                
+                  <button
+                    id="search-button-1"
+                    title="검색 (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        n8n - 이벤트 기반 자동화 도구
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2026-01-31 00:00:00 &#43;0000 UTC">2026년 1월 31일</time>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+        <div class="prose">
+          
+          
+          
+          
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mb-6 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/blog/n8n/feature-n8n_hu_d4718901d69f5519.webp 330w,http://localhost:1313/blog/n8n/feature-n8n_hu_dbca2f1b95c87e6f.webp 660w
+            
+              ,http://localhost:1313/blog/n8n/feature-n8n_hu_e04752a188717cf3.webp 1024w
+            
+            
+              
+                ,http://localhost:1313/blog/n8n/feature-n8n_hu_c2b4856bd9931f8b.webp 1280w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1280"
+        height="512"
+        class="mb-6 rounded-md"
+        
+        
+        
+          src="http://localhost:1313/blog/n8n/feature-n8n_hu_a85ebb4313516cfd.png" srcset="http://localhost:1313/blog/n8n/feature-n8n_hu_ca4e796a4f571a70.png 330w,http://localhost:1313/blog/n8n/feature-n8n_hu_a85ebb4313516cfd.png 660w
+          
+            ,http://localhost:1313/blog/n8n/feature-n8n_hu_6842c09ec820374e.png 1024w
+          
+          
+            ,http://localhost:1313/blog/n8n/feature-n8n.png 1280w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+          
+        </div>
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <h1 id="n8n---이벤트-기반-자동화-도구" class="relative group">n8n - 이벤트 기반 자동화 도구 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#n8n---%ec%9d%b4%eb%b2%a4%ed%8a%b8-%ea%b8%b0%eb%b0%98-%ec%9e%90%eb%8f%99%ed%99%94-%eb%8f%84%ea%b5%ac" aria-label="앵커">#</a></span></h1><hr>
+<h3 id="1-n8n이란" class="relative group">1. n8n이란? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-n8n%ec%9d%b4%eb%9e%80" aria-label="앵커">#</a></span></h3><ul>
+<li>이벤트 기반 자동화 도구</li>
+<li>다양한 앱·서비스를 노드(Node) 로 연결</li>
+<li>조건 분기, 반복, 코드 실행까지 가능</li>
+<li>오픈소스 (Self-host 가능)</li>
+</ul>
+<!-- raw HTML omitted -->
+<h3 id="2-활용-예시" class="relative group"><strong>2. 활용 예시</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-%ed%99%9c%ec%9a%a9-%ec%98%88%ec%8b%9c" aria-label="앵커">#</a></span></h3><ol>
+<li>업무 자동화</li>
+</ol>
+<ul>
+<li>이메일 수신 → 첨부파일 저장 → Slack 알림</li>
+<li>Google Sheets 업데이트 → 보고서 생성 → 메일 발송</li>
+<li>서버 로그 발생 → 필터링 → 장애 알림</li>
+</ul>
+<ol start="2">
+<li>API 오케스트레이션</li>
+</ol>
+<ul>
+<li>여러 REST API 호출</li>
+<li>인증 토큰 처리</li>
+<li>응답 파싱 후 다음 API에 전달</li>
+</ul>
+<ol start="3">
+<li>데이터 처리 파이프라인</li>
+</ol>
+<ul>
+<li>크롤링</li>
+<li>데이터 정제</li>
+<li>DB 저장 (MySQL, PostgreSQL, MongoDB 등)</li>
+</ul>
+<ol start="4">
+<li>AI 연계 자동화</li>
+</ol>
+<ul>
+<li>OpenAI / LLM 호출</li>
+<li>텍스트 요약, 분류, 번역 자동화</li>
+<li>챗봇 백엔드 워크플로우</li>
+</ul>
+<!-- raw HTML omitted -->
+<h3 id="3-핵심-개념" class="relative group">3. 핵심 개념 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-%ed%95%b5%ec%8b%ac-%ea%b0%9c%eb%85%90" aria-label="앵커">#</a></span></h3><ol>
+<li>Node</li>
+</ol>
+<ul>
+<li>하나의 작업 단위</li>
+<li>예: HTTP Request, IF, Function, Webhook, Slack</li>
+</ul>
+<!-- raw HTML omitted -->
+<ol start="2">
+<li>Workflow</li>
+</ol>
+<ul>
+<li>노드들을 연결한 전체 자동화 시나리오</li>
+</ul>
+<!-- raw HTML omitted -->
+<ol start="3">
+<li>Trigger</li>
+</ol>
+<ul>
+<li>워크플로우를 시작시키는 조건</li>
+<li>Webhook, Cron, 이메일 수신, 앱 이벤트 등</li>
+</ul>
+<!-- raw HTML omitted -->
+<ol start="4">
+<li>Execution</li>
+</ol>
+<ul>
+<li>워크플로우가 실제로 한 번 실행된 기록</li>
+</ul>
+<h3 id="4-n8n의-강점" class="relative group">4. n8n의 강점 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#4-n8n%ec%9d%98-%ea%b0%95%ec%a0%90" aria-label="앵커">#</a></span></h3><ol>
+<li>개발자 친화적</li>
+</ol>
+<ul>
+<li>JavaScript 코드 직접 작성 가능 (Function / Code 노드)</li>
+<li>JSON, HTTP, 인증 흐름을 그대로 다룸</li>
+</ul>
+<!-- raw HTML omitted -->
+<ol start="2">
+<li>Self-host 가능</li>
+</ol>
+<ul>
+<li>데이터 외부 유출 없이 내부 서버 운영 가능</li>
+<li>보안·비용 통제에 유리</li>
+</ul>
+<!-- raw HTML omitted -->
+<ol start="3">
+<li>자유도 높음</li>
+</ol>
+<ul>
+<li>Zapier보다 <strong>조건/반복/커스텀 로직</strong>이 강력</li>
+<li>복잡한 워크플로우 구성 가능</li>
+</ul>
+<!-- raw HTML omitted -->
+<ol start="4">
+<li>비용 효율</li>
+</ol>
+<ul>
+<li>자가호스팅 시 실행 횟수 제한 없음</li>
+<li>SaaS 대비 비용 절감</li>
+</ul>
+<!-- raw HTML omitted -->
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+        
+        
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+      
+    >
+      
+      
+      
+      
+      <img
+        width="1280"
+        height="1280"
+        class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+        alt="해랑34"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/img/profile_hu_d5b2ca6afdb2d6bc.png" srcset="http://localhost:1313/img/profile_hu_9d151493c906c6fb.png 330w,http://localhost:1313/img/profile_hu_d5b2ca6afdb2d6bc.png 660w
+          
+            ,http://localhost:1313/img/profile_hu_f7b686923a5839c9.png 1024w
+          
+          
+            ,http://localhost:1313/img/profile.png 1280w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          글쓴이
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          해랑34
+        </div>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">소프트웨어 개발자, 데이터 엔지니어, 클라우드 엔지니어.</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://www.github.com/haerang34"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://www.linkedin.com/in/haerang34"
+          target="_blank"
+          aria-label="Linkedin"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="mailto:kgwac34@gmail.com"
+          target="_blank"
+          aria-label="Email"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="http://localhost:1313/blog/mcp/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >MCP - Model Context Protocol</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-12-28 00:00:00 &#43;0000 UTC">2025년 12월 28일</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="위로 스크롤"
+            title="위로 스크롤"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+    <nav class="pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+      <ul class="flex list-none flex-col sm:flex-row">
+        
+          
+          <li class="group mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0">
+            
+              <a
+                href="/about/"
+                title="해랑34 정보"
+                
+                ><span
+                    class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                    >정보</span
+                  >
+                </a
+              >
+            
+          </li>
+        
+      </ul>
+    </nav>
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            &copy;
+            2026
+            해랑34
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+        <div
+          class="me-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        >
+          <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+            <div
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
+              title="다크 모드로 전환"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+            </div>
+            <div
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
+              title="라이트 모드로 전환"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+            </div>
+          </button>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="http://localhost:1313/"
+>
+  <div
+    id="search-modal"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="검색"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="닫기 (Esc)"
+      >
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto overflow-auto px-2">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>
